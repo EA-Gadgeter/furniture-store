@@ -1,0 +1,41 @@
+/* Globales */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* Header */
+h1 {
+    text-align: center;
+}
+
+h1 span {
+    color:  #037BC0;
+}
+
+.container {
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+.main-nav {
+    padding: 20px 0;
+
+    border-top: 1px solid #E1E1E1;
+}
+
+.hero-img {
+    height: 550px;
+
+    background-image: url("../img/principal.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

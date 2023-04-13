@@ -1,41 +1,112 @@
 /* Globales */
-*, *::before, *::after {
-    box-sizing: border-box;
-}
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
 
-body {
-    width: 100%;
-}
+    html {
+        font-size: 62.5%;
+    }
 
-a {
-    color: #000000;
-    text-decoration: none;
-}
+    body {
+        width: 100%;
+
+        font-size: 1.6rem;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    h1, h2, h3 {
+        font-family: 'Playfair Display', serif;
+        margin: 0 0 5rem;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+
+    a {
+        color: #000000;
+        text-decoration: none;
+    }
+
+    img {
+        max-width: 100%;
+
+        /* Hace que la imagen cubra por completo de manera vertical */
+        display: block;
+    }
+
+    .container {
+        max-width: 1200px;
+
+        margin-inline: auto;
+    }
 
 /* Header */
-h1 {
-    text-align: center;
-}
+    h1 {
+        margin: 5rem 0;
 
-h1 span {
-    color:  #037BC0;
-}
+        text-align: center;
+    }
 
-.container {
-    max-width: 1200px;
-    margin-inline: auto;
-}
+    h1 span {
+        color:  #037BC0;
+    }
 
-.main-nav {
-    padding: 20px 0;
+    .main-nav {
+        padding: 2rem 0;
 
-    border-top: 1px solid #E1E1E1;
-}
+        border-top: 0.1rem solid #E1E1E1;
+    }
 
-.hero-img {
-    height: 550px;
+    .main-nav .container {
+        display: flex;
+        justify-content: space-between;
+    }
 
-    background-image: url("../img/principal.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+    .hero-img {
+        height: 55rem;
+
+        background-image: url("../img/principal.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+/* Categories */
+    .categories {
+        margin-top: 5rem;
+    }
+
+    .categories h2 {
+        text-align: center;
+    }
+
+    .category-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .category a {
+        display: block;
+
+        padding: 2rem;
+
+        font-size: 2rem;
+
+        text-align: center;
+        border-bottom-right-radius: 1rem;
+    }
+
+    .category a:hover {
+        background-color: #037BC0;
+        color: #FFFFFF;
+    }

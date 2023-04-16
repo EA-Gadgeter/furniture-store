@@ -14,7 +14,7 @@
         font-family: 'Raleway', sans-serif;
     }
 
-    h1, h2, h3 {
+    h1, h2, h3, h4 {
         font-family: 'Playfair Display', serif;
         margin: 0 0 5rem;
     }
@@ -53,6 +53,8 @@
     .btn {
         width: 100%;
 
+        display: inline-block;
+
         padding: 1rem;
 
         font-weight: 900;
@@ -61,12 +63,17 @@
         color: #FFFFFF;
         text-transform: uppercase;
         background-color: #9CBC00;
+        text-align: center;
 
         transition: background-color .3s ease-out;
     }
 
     .btn:hover {
         background-color: #769C02;
+    }
+
+    .max-width-300 {
+        max-width: 300px;
     }
 
 /* Header */
@@ -295,4 +302,44 @@
 
     .about-us-page__container .about-us__text p {
         max-width: none;
+    }
+
+/* BLOGS PAGE */
+    .blogs-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+
+    .blogs article {
+        padding-bottom: 4rem;
+        margin-bottom: 4rem;
+
+        border-bottom: 0.2rem solid #E1E1E1;
+    }
+    .blogs article:last-of-type {
+        border: none;
+    }
+
+    article .blog__info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .blog__info p {
+        font-weight: 700;
+    }
+
+    .blog__info span {
+        color: #037BC0;
+    }
+
+    .blog__content {
+        line-height: 3rem;
+    }
+
+/* BLOGSPOT PAGE */
+    .blogspot {
+        width: 600px;
+        margin-inline: auto;
     }

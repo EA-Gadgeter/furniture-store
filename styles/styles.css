@@ -164,7 +164,7 @@
     .about-us__text p {
         max-width: 500px;
 
-        line-height: 2.5rem;
+        line-height: 3rem;
     }
 
 /* Main content */
@@ -256,19 +256,19 @@
     }
 
 /* Footer */
-    .index-footer {
+    footer {
         margin-top: 5rem;
         padding-top: 5rem;
 
         border-top: 0.1rem solid #E1E1E1;
     }
 
-    .index-footer__menus {
+    .footer-menu {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .index-footer__menus div nav {
+    .footer-menu div nav {
         display: flex;
         flex-direction: column;
         gap: 1rem;
@@ -278,4 +278,21 @@
         margin-top: 5rem;
 
         text-align: center;
+    }
+
+/* ABOUTS US PAGE */
+    .about-us-page__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        column-gap: 4rem;
+    }
+
+    .about-us-page__container .about-us__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .about-us-page__container .about-us__text p {
+        max-width: none;
     }

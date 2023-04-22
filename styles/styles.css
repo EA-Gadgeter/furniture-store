@@ -343,3 +343,22 @@
         width: 600px;
         margin-inline: auto;
     }
+
+/* GALLERY PAGE */
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+
+        padding: 0;
+        margin: 0;
+
+        list-style: none;
+    }
+
+    .gallery img {
+        width: 40rem;
+        height: 40rem;
+        
+        object-fit: cover;
+    }

@@ -59,6 +59,7 @@
 
         font-weight: 900;
 
+        cursor: pointer;
         border: none;
         color: #FFFFFF;
         text-transform: uppercase;
@@ -361,4 +362,51 @@
         height: 40rem;
         
         object-fit: cover;
+    }
+
+/* CONTACT PAGE */
+    .contact-form {
+        max-width: 600px;
+
+        margin-inline: auto;
+    }
+
+    .contact-form fieldset {
+        margin-bottom: 2rem;
+
+        border: 0.1rem solid black;
+    }
+
+    .contact-form legend {
+        width: 100%;
+
+        padding: 1rem 0;
+        margin-bottom: 4rem;
+
+        font-weight: 900;
+
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background-color: #005485;
+    }
+
+    .field {
+        display: flex;
+
+        margin-bottom: 2rem;
+    }
+
+    .field label {
+        width: 10rem;
+    }
+
+    .field input:not([type="radio"]), 
+    textarea, 
+    select {
+        flex: 1;
+
+        padding: 1rem;
+
+        border: 0.1rem solid #E1E1E1;
     }
